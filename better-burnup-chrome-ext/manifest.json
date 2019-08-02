@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Better Burnup",
+  "description": "Better Burnup chart in Jira",
+  "version": "0.1",
+  "omnibox": { "keyword" : "jira" },
+
+  "browser_action": {
+   "default_icon": "b-b-icon.png",
+   "default_title": "Better Burnup",
+   "default_popup": "popup.html"
+ },
+
+ "permissions": [ "tabs", "*://*/*" ],
+  "icons" : { "128" : "icon-128.png", "48" : "icon-48.png", "16" : "icon-16.png" },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+
+  "commands": {
+     "_execute_browser_action": {
+       "suggested_key": {
+         "default": "Ctrl+Shift+F",
+         "mac": "MacCtrl+Shift+F"
+       },
+       "description": "Opens popup.html"
+     }
+   }
+
+}

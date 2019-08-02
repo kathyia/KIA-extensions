@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "OrderlyEpic",
+  "description": "OrderlyEpic in Jira",
+  "version": "0.1",
+  "omnibox": { "keyword" : "jira" },
+
+  "browser_action": {
+   "default_icon": "oe-icon.png",
+   "default_title": "OrderlyEpic",
+   "default_popup": "popup.html"
+ },
+
+ "permissions": [ "tabs", "*://*/*" ],
+
+  "commands": {
+     "_execute_browser_action": {
+       "suggested_key": {
+         "default": "Ctrl+Shift+F",
+         "mac": "MacCtrl+Shift+F"
+       },
+       "description": "Opens popup.html"
+     }
+   }
+
+}
